@@ -8,7 +8,7 @@ export const Navigation = () => {
     <nav className="fixed top-0 w-full bg-white shadow-md z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold">Your Name</div>
+          <div className="text-xl font-bold">Ankita Mehta</div>
           
           {/* Mobile menu button */}
           <button 
@@ -20,7 +20,7 @@ export const Navigation = () => {
 
           {/* Desktop navigation */}
           <div className="hidden md:flex space-x-8">
-            {['home', 'projects', 'about', 'contact'].map(section => (
+            {['home', 'projects', 'blog', 'about', 'contact'].map(section => (
               <a
                 key={section}
                 href={`#${section}`}

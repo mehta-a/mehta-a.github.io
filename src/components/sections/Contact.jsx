@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center bg-gray-50 py-20 px-4">
       <div className="max-w-md w-full">
-        <h2 className="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">I am excited to talk to you! Lets get in touch.</h2>
         <form className="space-y-6">
           <div>
             <label className="block text-gray-700 mb-2">Name</label>
