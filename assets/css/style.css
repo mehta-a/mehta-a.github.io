@@ -1,0 +1,328 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #e5e5e5;
+    background: #0a0a0a;
+    min-height: 100vh;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 50px;
+}
+
+.header {
+    margin-bottom: 120px;
+}
+
+.name {
+    font-size: 4rem;
+    font-weight: 200;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: #888888;
+    margin-bottom: 60px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+}
+
+.profile-section {
+    display: flex;
+    align-items: bottom;
+    gap: 50px;  /* Changed from 40px */
+    margin-bottom: 60px;
+}
+
+.profile-image {
+    width: 140px;  /* Changed from 120px */
+    height: 140px; /* Changed from 120px */
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-content {
+    flex: 1;
+    position: bottom;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0;
+    align-items: top;
+}
+
+.nav-link {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    padding: 12px 24px;
+    position: top;
+    transition: color 0.2s ease;
+    letter-spacing: 0.01em;
+}
+
+.nav-link:not(:last-child)::after {
+    content: "·";
+    position: absolute;
+    right: 0;
+    color: #444444;
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.intro-section {
+    margin-bottom: 100px;
+}
+
+.intro-text {
+    font-size: 1.4rem;
+    color: #b8b8b8;
+    line-height: 1.7;
+    font-weight: 300;
+    max-width: 800px;
+    letter-spacing: -0.01em;
+    text-align: justify;
+}
+
+.highlight {
+    color: #ffffff;
+    font-weight: 600;  /* Changed from 400 to 600 */
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        width: 130px;  /* Changed from 100px */
+        height: 130px; /* Changed from 100px */
+    }
+}
+
+.nav-link.mailto {
+    color: #cccccc; 
+    font-style: regular;
+}
+
+.nav-link.mailto:hover {
+    color: #ffffff;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.section {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.9;
+}
+
+.text-content {
+    color: #b8b8b8;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: -0.005em;
+    text-align: left;
+}
+
+.list-item {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.item-title {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.item-subtitle {
+    font-size: 0.95rem;
+    color: #888888;
+    margin-bottom: 16px;
+    font-weight: 300;
+    letter-spacing: 0.005em;
+}
+
+.item-description,
+.item-institution {
+    font-size: 0.95rem;
+    color: #999999;
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: -0.005em;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-in {
+    animation: shimmer 0.8s ease-out forwards;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Refined spacing and typography */
+.education-item {
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.degree {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.institution {
+    font-size: 0.95rem;
+    color: #888888;
+    font-weight: 300;
+    letter-spacing: 0.005em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 80px 30px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .nav-link {
+        padding: 8px 0;
+        display: flex;           /* Add this */
+        align-items: center;     /* Add this */
+        gap: 8px;               /* Add this */
+    }
+
+    .nav-icon {
+        width: 8px;
+        height: 8px;
+    }
+
+    .nav-icon path {
+        fill: #cccccc !important;
+    }
+
+    .nav-link:hover .nav-icon path {
+        fill: #ffffff !important;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 60px 25px;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+}
