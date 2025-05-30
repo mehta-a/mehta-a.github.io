@@ -55,6 +55,7 @@
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/ai_persona_style.css">
     
     <!-- Structured Data - JSON-LD -->
     <script type="application/ld+json">
@@ -216,6 +217,8 @@
         "url": "https://ankitamehta.com"
     }
     </script>
+
+    <script src="assets/js/ai_persona_script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -332,8 +335,114 @@
             </div>
         </div>
 
+        <div class="spacer">
+            <section itemscope itemtype="https://schema.org/SoftwareApplication">
+                <h2 class="section-title">Experience My <span class="highlight-ai">AI Persona Assistant</span> 🤖</h2>
+                <p>
+                    Want to learn about my work and expertise in <strong>AI/ML</strong>? Chat directly with my intelligent <strong>AI assistant</strong> trained on my background and experience powered by <a style="color: #fff;" href="https://soopra.ai">Soopra.ai</a>. This <strong>AI agent</strong> is powered by advanced <strong>large language models</strong> and can provide insights about my expertise in <strong>conversational AI</strong>, <strong>AI personality design</strong>, and the solutions I help clients build.
+                </p>
+                
+                <!-- AI Capabilities Grid -->
+                <div class="ai-features">
+                    <div class="ai-feature">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        Advanced AI Persona
+                    </div>
+                    <div class="ai-feature">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        Conversational AI
+                    </div>
+                    <div class="ai-feature">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Intelligent Agent
+                    </div>
+                    <div class="ai-feature">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                        Real-time AI Responses
+                    </div>
+                </div>
+                
+                <p style="margin-top: 15px; padding: 10px; background: rgba(79, 70, 229, 0.1); border-radius: 6px; border-left: 3px solid #4f46e5;">
+                    <strong>🎯 This AI assistant provides insights about:</strong> My expertise in AI/ML engineering, experience with large language models, approach to building intelligent systems, and how I help clients with AI persona development and conversational AI projects.
+                </p>
+                
+                <div class="ai-chat-container" 
+                    style="margin: 20px 0; border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #1a1a1a;"
+                    itemscope itemtype="https://schema.org/WebApplication">
+                    
+                    <div class="chat-header" style="background: #2a2a2a; padding: 15px; border-bottom: 1px solid #333;">
+                        <h3 style="margin: 0; color: #fff; font-size: 16px; display: flex; align-items: center;" itemprop="name">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                            Ankita's AI Persona Assistant
+                            <span class="ai-badge">🧠 Smart AI</span>
+                        </h3>
+                        <p style="margin: 5px 0 0 28px; color: #ccc; font-size: 14px;" itemprop="description">
+                            Advanced Conversational AI • Powered by Soopra AI Technology
+                        </p>
+                    </div>
+                    
+                    <!-- Loading Animation -->
+                    <div id="aiChatLoading" class="loading-container">
+                        <svg class="ai-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        <div class="loading-progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="loading-text">Initializing AI Persona...</div>
+                        <div class="loading-subtext">
+                            Loading advanced conversational AI capabilities and personalized knowledge base
+                        </div>
+                    </div>
+                    
+                    <!-- Chat Iframe -->
+                    <iframe 
+                        id="aiChatIframe"
+                        src="https://soopra.ai/ankita_mehta/chat" 
+                        class="chat-iframe"
+                        frameborder="0" 
+                        title="Chat with Ankita Mehta's AI Persona Assistant - Conversational AI Demo"
+                        allow="microphone; camera"
+                        loading="lazy"
+                        itemprop="url">
+                        <p>Your browser doesn't support iframes. <a href="https://soopra.ai/ankita_mehta/chat" target="_blank" rel="noopener noreferrer">Click here to chat with my AI persona assistant</a></p>
+                    </iframe>
+                </div>
+                
+                <!-- Enhanced AI Prompt Examples -->
+                <div style="font-size: 14px; color: #999; margin-top: 15px;">
+                    <p><strong>💡 Try asking my AI persona:</strong></p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; margin-top: 10px;">
+                        <div>
+                            <strong>💼 Business & Startups:</strong><br>
+                            • "Tell me about Manastha's AI platform"<br>
+                            • "How can AI transform my business?"<br>
+                            • "What's your startup consulting approach?"
+                        </div>
+                        <div>
+                            <strong>🔧 Technical Expertise:</strong><br>
+                            • "Explain conversational AI design"<br>
+                            • "How do you integrate AI chatbots?"<br>
+                            • "What's the future of AI assistants?"
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </br>
+        </div> 
+            
         <section>
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title">Book a Personal Consultation</h2>
             <p>
                 Ready to accelerate your tech journey or startup vision? I'm here to help you navigate challenges, unlock opportunities, and build solutions that create lasting impact. Whether you're scaling your engineering team, architecting data systems, or turning an idea into a market-ready product, let's collaborate to achieve your goals.
                 Book a personalized consultation where we'll dive deep into your specific needs and create actionable strategies for success. I believe in fostering growth through meaningful connections and practical guidance.                    
